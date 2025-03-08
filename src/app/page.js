@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Brain, ChevronRight, Shield, FileText, Users } from 'lucide-react';
+import depressionImage from '../../public/depressionImage4.avif'
 
 export default function Home() {
   return (
@@ -13,14 +14,14 @@ export default function Home() {
         <nav className="hidden md:flex gap-8">
           <a href="#how-it-works" className="text-gray-600 hover:text-indigo-600">How It Works</a>
           <a href="#benefits" className="text-gray-600 hover:text-indigo-600">Benefits</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-indigo-600">Testimonials</a>
+          <a href="#testimonials" className="text-gray-600 hover:text-indigo-600">Experts</a>
           <a href="#about" className="text-gray-600 hover:text-indigo-600">About Us</a>
         </nav>
         <div className="flex gap-4">
-          <button className="px-4 py-2 border border-indigo-600 text-indigo-600 rounded-md hover:bg-indigo-50">
+          <button className="px-4 py-2 border border-indigo-600 text-indigo-600 rounded-md hover:bg-indigo-50 cursor-pointer">
             Log In
           </button>
-          <button className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
+          <button className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -44,16 +45,16 @@ export default function Home() {
                 </a>
                 <a
                   className="rounded-full border border-solid border-white text-white transition-colors flex items-center justify-center hover:bg-white/10 h-12 px-6 font-medium"
-                  href="#learn-more"
+                  href="https://www.nih.gov/news-events/nih-research-matters/research-context-treating-depression" target="_blank"
                 >
                   Learn More
                 </a>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full max-w-md aspect-video">
+              <div className="relative w-full max-w-md aspect-video p-10 bg-white shadow-md shadow-gray-100 rounded-lg">
                 <Image 
-                  src="/api/placeholder/500/300" 
+                  src={depressionImage} 
                   alt="Depression prediction illustration" 
                   fill
                   className="rounded-lg shadow-xl object-cover"
@@ -163,41 +164,41 @@ export default function Home() {
         {/* Testimonials */}
         <section id="testimonials" className="py-16 px-8 bg-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Users Say</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Experts Say</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  "MindPredict helped me recognize patterns I wasn't aware of. I sought help early and it made all the difference in my recovery journey."
+                  "The sooner you seek help for depression, the better the outcome. Early intervention is key to recovery."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Sarah J.</h4>
-                    <p className="text-gray-500 text-sm">Teacher, 34</p>
+                    <h4 className="font-semibold text-gray-900">Dr. David Burns.</h4>
+                    <p className="text-gray-500 text-sm">psychiatrist </p>
                   </div>
                 </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  "As a healthcare provider, I recommend this tool to my patients. It helps start important conversations about mental health."
+                  "Depression is treatable, and early treatment leads to faster healing. Don’t wait—reach out and reclaim your life."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Dr. Michael R.</h4>
-                    <p className="text-gray-500 text-sm">Psychologist</p>
+                    <h4 className="font-semibold text-gray-900">Dr. Kay Redfield Jamison.</h4>
+                    <p className="text-gray-500 text-sm">psychologist</p>
                   </div>
                 </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  "The personalized recommendations were spot on. They guided me to resources I never knew existed."
+                  "Healing begins the moment you acknowledge your pain and seek support. Early intervention changes the course of depression."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Alex T.</h4>
-                    <p className="text-gray-500 text-sm">Student, 22</p>
+                    <h4 className="font-semibold text-gray-900"> Dr. Aaron Beck.</h4>
+                    <p className="text-gray-500 text-sm">psychiatrist </p>
                   </div>
                 </div>
               </div>
@@ -206,46 +207,25 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="p-6 bg-gray-800 text-gray-300">
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-4">
+      <footer className="p-6 bg-gray-800 text-gray-300 ">
+        <div className="max-w-6xl mx-auto gap-8 md:grid-cols-4 flex justify-center">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Brain className="text-indigo-400" size={24} />
-              <h3 className="text-xl font-bold text-white">MindPredict</h3>
+              <h3 className="text-3xl font-bold text-white">MindPredict</h3>
             </div>
             <p className="text-gray-400">
-              Advancing mental health through technology and compassion.
+              Advancing mental health <br />through technology and compassion.
             </p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">Resources</h4>
-            <ul className="flex flex-col gap-2">
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Mental Health Articles</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Self-Care Guides</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Professional Directory</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
-            <ul className="flex flex-col gap-2">
-              <li><a href="#" className="hover:underline hover:underline-offset-4">About Us</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Our Team</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">Legal</h4>
-            <ul className="flex flex-col gap-2">
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Privacy Policy</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Terms of Service</a></li>
-              <li><a href="#" className="hover:underline hover:underline-offset-4">Disclaimer</a></li>
-            </ul>
           </div>
         </div>
         <div className="max-w-6xl mx-auto border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>© 2025 MindPredict. All rights reserved.</p>
           <p className="mt-2 text-sm">
             This tool is not a substitute for professional medical advice, diagnosis, or treatment.
+          </p>
+          <p className="mt-2">
+            @Contact
           </p>
         </div>
       </footer>
