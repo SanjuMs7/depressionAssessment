@@ -164,9 +164,9 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Experts Say</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-gray-600 mb-4">
-                  &quot;The sooner you seek help for depression, the better the outcome. Early intervention is key to recovery.&quot;
-                </p>
+              <p className="text-gray-600 mb-4">
+                &quot;The sooner you seek help for depression, the better the outcome. Early intervention is key to recovery.&quot;
+              </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
@@ -176,9 +176,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-gray-600 mb-4">
-                  &quot;Depression is treatable, and early treatment leads to faster healing. Don't wait—reach out and reclaim your life.&quot;
-                </p>
+              <p className="text-gray-600 mb-4">
+                &quot;Depression is treatable, and early treatment leads to faster healing. Don&apos;t wait—reach out and reclaim your life.&quot;
+              </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
@@ -188,9 +188,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 &quot;Healing begins the moment you acknowledge your pain and seek support. Early intervention changes the course of depression.&quot;
-                </p>
+              </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
                   <div>
