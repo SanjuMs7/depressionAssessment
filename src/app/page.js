@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Brain, ChevronRight, Shield, FileText, Users } from 'lucide-react';
-import depressionImage from '../../public/depressionImage4.avif'
 
 export default function Home() {
   return (
@@ -9,13 +7,13 @@ export default function Home() {
       <header className="flex justify-between items-center p-6 bg-white shadow-sm">
         <div className="flex items-center gap-2">
           <Brain className="text-indigo-600" size={24} />
-          <h1 className="text-xl font-bold text-gray-900">MindPredict</h1>
+          <h1 className="text-xl font-bold text-gray-900">MindWell</h1>
         </div>
         <nav className="hidden md:flex gap-8">
           <a href="#how-it-works" className="text-gray-600 hover:text-indigo-600">How It Works</a>
           <a href="#benefits" className="text-gray-600 hover:text-indigo-600">Benefits</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-indigo-600">Experts</a>
-          <a href="#about" className="text-gray-600 hover:text-indigo-600">About Us</a>
+          <a href="#experts" className="text-gray-600 hover:text-indigo-600">Experts</a>
+          <a href="#contact" className="text-gray-600 hover:text-indigo-600">About Us</a>
         </nav>
         <div className="flex gap-4">
           <button className="px-4 py-2 border border-indigo-600 text-indigo-600 rounded-md hover:bg-indigo-50 cursor-pointer">
@@ -29,8 +27,8 @@ export default function Home() {
 
       <main className="flex flex-col">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 px-8">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="bg-gradient-to-r from-blue-500 to-indigo-800 text-white py-16 px-8">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-36 items-center">
             <div className="flex flex-col gap-6">
               <h2 className="text-4xl md:text-5xl font-bold">Early Detection for Better Mental Health</h2>
               <p className="text-xl">
@@ -51,16 +49,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-md aspect-video p-10 bg-white shadow-md shadow-gray-100 rounded-lg">
-                <Image 
-                  src={depressionImage} 
-                  alt="Depression prediction illustration" 
-                  fill
-                  className="rounded-lg shadow-xl object-cover"
-                  priority
-                />
-              </div>
+            <div className="flex justify-center items-center gap-6">
+              <Brain className="text-white" size={240} />
+              <p className="font-poppins italic">"Even in the darkest moments, <br />your mind has the strength to heal.<br /> Keep going<br/>light will find its way back."<br/>— MindWell </p>
             </div>
           </div>
         </section>
@@ -68,7 +59,7 @@ export default function Home() {
         {/* How It Works */}
         <section id="how-it-works" className="py-16 px-8 bg-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">How MindPredict Works</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">How MindWell Works</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
@@ -129,8 +120,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="relative mb-4">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
-                    <span className="text-indigo-600 font-bold">90%</span>
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center p-6">
+                    <span className="text-indigo-600 font-bold">67.7%</span>
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">Accuracy</h3>
@@ -143,14 +134,14 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-8 bg-indigo-600 text-white">
+        <section className="py-16 px-8 bg-blue-800 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to prioritize your mental health?</h2>
             <p className="text-xl mb-8">
               Take the first step toward understanding your mental health status and accessing personalized support.
             </p>
             <a
-              className="rounded-full bg-white text-indigo-600 transition-colors flex items-center justify-center hover:bg-gray-100 h-12 px-8 font-medium mx-auto w-fit text-lg"
+              className="rounded-full bg-white text-blue-800 transition-colors flex items-center justify-center hover:bg-gray-100 h-12 px-8 font-medium mx-auto w-fit text-lg"
               href="#assessment"
             >
               Start Free Assessment
@@ -162,7 +153,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section id="testimonials" className="py-16 px-8 bg-white">
+        <section id="experts" className="py-16 px-8 bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Experts Say</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -207,12 +198,12 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="p-6 bg-gray-800 text-gray-300 ">
+      <footer id="contact"className="p-6 bg-gray-800 text-gray-300 ">
         <div className="max-w-6xl mx-auto gap-8 md:grid-cols-4 flex justify-center">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Brain className="text-indigo-400" size={24} />
-              <h3 className="text-3xl font-bold text-white">MindPredict</h3>
+              <h3 className="text-3xl font-bold text-white">MindWell</h3>
             </div>
             <p className="text-gray-400">
               Advancing mental health <br />through technology and compassion.
@@ -220,7 +211,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-6xl mx-auto border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>© 2025 MindPredict. All rights reserved.</p>
+          <p>© 2025 MindWell. All rights reserved.</p>
           <p className="mt-2 text-sm">
             This tool is not a substitute for professional medical advice, diagnosis, or treatment.
           </p>
