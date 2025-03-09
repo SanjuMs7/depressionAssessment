@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center gap-6">
               <Brain className="text-white" size={240} />
-              <p className="font-poppins italic">Even in the darkest moments, <br />your mind has the strength to heal.<br /> Keep going<br/>light will find its way back.&quot;<br/>— MindWell </p>
+              <p className="font-poppins italic">"Even in the darkest moments, <br />your mind has the strength to heal.<br /> Keep going<br/>light will find its way back."<br/>— MindWell </p>
             </div>
           </div>
         </section>
@@ -159,7 +159,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  The sooner you seek help for depression, the better the outcome. Early intervention is key to recovery.&quot;
+                  "The sooner you seek help for depression, the better the outcome. Early intervention is key to recovery."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  Depression is treatable, and early treatment leads to faster healing. Don't wait—reach out and reclaim your life.&quot;
+                  "Depression is treatable, and early treatment leads to faster healing. Don't wait—reach out and reclaim your life."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
@@ -183,7 +183,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-600 mb-4">
-                  Healing begins the moment you acknowledge your pain and seek support. Early intervention changes the course of depression.&quot;
+                  "Healing begins the moment you acknowledge your pain and seek support. Early intervention changes the course of depression."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-200 rounded-full mr-3"></div>
